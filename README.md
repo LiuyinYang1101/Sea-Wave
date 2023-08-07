@@ -10,7 +10,7 @@ This study introduces the EEGWaveRegressor, a novel model for auditory EEG decod
 
 If you use EEGWaveRegressor in your research or work, please consider citing our paper:
 
-'''
+```
 @INPROCEEDINGS{a-Wavenet,
   author={Van Dyck, Bob and Yang, Liuyin and Van Hulle, Marc M.},
   booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
@@ -20,7 +20,7 @@ If you use EEGWaveRegressor in your research or work, please consider citing our
   number={},
   pages={1-2},
   doi={10.1109/ICASSP49357.2023.10095420}}
-'''
+```
 
 ## Acknowledgments
 
