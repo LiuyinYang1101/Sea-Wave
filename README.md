@@ -26,9 +26,8 @@ If you use EEGWaveRegressor in your research or work, please consider citing our
 
 We would like to acknowledge the following papers and implementations, which have significantly influenced our research and contributed to the development of EEGWaveRegressor:
 
-- \[Other Paper 1\]
-- \[Other Paper 2\]
-- \[Other Paper 3\]
+- FloWaveNet: https://github.com/ksw0306/FloWaveNet/blob/master/modules.py
+- DiffWave: https://github.com/philsyn/DiffWave-Vocoder
 
 We are grateful to the authors of these works for their valuable contributions to the field.
 
@@ -47,10 +46,10 @@ To get started with EEGWaveRegressor, follow the instructions below:
 
 ## Usage
 
-'''
+```
 to train:
 python distributed_train.py
-'''
+```
 
 ## Model Interpretability
 
