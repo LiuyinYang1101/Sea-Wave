@@ -1,0 +1,36 @@
+{
+  "wavenet_config": {
+    "in_channels": 64,
+    "res_channels": 32,
+    "skip_channels": 32,
+    "out_channels": 1,
+    "num_res_layers": 20,
+    "dilation_cycle": 4,
+    "drop_out": 0.2
+  },
+    "train_config": {
+      "output_directory": "logs/checkpoint",
+      "tensorboard_directory": "logs/tensorboard",
+      "ckpt_iter": "max",
+      "iters_per_ckpt": 2,
+      "iters_per_logging": 1,
+      "n_iters": 200,
+      "learning_rate": 1e-4,
+      "batch_size_per_gpu": 32,
+      "train_from_scratch":  true
+    },
+  "trainset_config": {
+    "data_path": "/vsc-hard-mounts/leuven-data/343/vsc34340/icassp2023Challenge/data/split_data",
+    "pretrained_model_path": "/vsc-hard-mounts/leuven-data/343/vsc34340/icassp2023Challenge/WaveNet_new/exp/Regressor_hf_mse_gelu_skip_population_ch128_layer16/logs/checkpoint",
+    "fs": 64
+
+  },
+    "gen_config":{
+        "tensorboard_directory": "logs/tensorboard",
+        "ckpt_path": "logs/checkpoint"
+    },
+    "dist_config": {
+        "dist_backend": "nccl",
+        "dist_url": "tcp://localhost:54321"
+    }
+}

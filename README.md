@@ -10,7 +10,8 @@ This study introduces the EEGWaveRegressor, a novel model for auditory EEG decod
 
 If you use EEGWaveRegressor in your research or work, please consider citing our paper:
 
-\[@INPROCEEDINGS{a-Wavenet,
+'''
+@INPROCEEDINGS{a-Wavenet,
   author={Van Dyck, Bob and Yang, Liuyin and Van Hulle, Marc M.},
   booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
   title={Decoding Auditory EEG Responses Using an Adapted Wavenet}, 
@@ -18,7 +19,8 @@ If you use EEGWaveRegressor in your research or work, please consider citing our
   volume={},
   number={},
   pages={1-2},
-  doi={10.1109/ICASSP49357.2023.10095420}}]
+  doi={10.1109/ICASSP49357.2023.10095420}}
+'''
 
 ## Acknowledgments
 
@@ -40,12 +42,15 @@ To get started with EEGWaveRegressor, follow the instructions below:
 1. Clone this repository to your local machine.
 2. Install the required dependencies (list the dependencies and their versions, if applicable).
 3. Download the EEG data and preprocessed datasets as described in the accompanying documentation.
-4. Run the model training script, specifying the desired hyperparameters and dataset paths.
+4. Run the model training script, specifying the desired hyperparameters and dataset paths in the corresponding .json file.
 5. Evaluate the trained model's performance on held-out subjects and held-out stories.
 
 ## Usage
 
-\[Provide usage instructions and examples here\]
+'''
+to train:
+python distributed_train.py
+'''
 
 ## Model Interpretability
 
