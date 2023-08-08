@@ -1,14 +1,14 @@
-# EEGWaveRegressor
+# EEGWaveNet
 
-EEGWaveRegressor is an open-source repository for a novel approach to auditory EEG decoding. This project presents the EEGWaveRegressor model, a state-of-the-art architecture for auditory EEG data decoding. Check our paper:
+EEGWaveNet is an open-source repository for a novel approach to auditory EEG decoding. This project presents the EEGWaveNet model, a state-of-the-art architecture for auditory EEG data decoding. Check our paper:
 
 ## Introduction
 
-This study introduces the EEGWaveRegressor, a novel model for auditory EEG decoding as an extension of our adapted Wavenet model, the model that ranked second in the Auditory EEG Challenge regression subtask of the ICASSP Signal Processing Grand Challenge 2023. We introduce EEGWaveRegressor which resulted in superior performance compared to state-of-the-art models as well as good interpretability. The best model achieved a Pearson correlation of 0.2258 on held-out stories and 0.1158 on held-out subjects. After fine-tuning, the best subject could reach a Pearson score above 0.5.
+This study introduces the EEGWaveNet, a novel model for auditory EEG decoding as an extension of our adapted Wavenet model, the model that ranked second in the Auditory EEG Challenge regression subtask of the ICASSP Signal Processing Grand Challenge 2023. We introduce EEGWaveNet which resulted in superior performance compared to state-of-the-art models as well as good interpretability. The best model achieved a Pearson correlation of 0.2258 on held-out stories and 0.1158 on held-out subjects. After fine-tuning, the best subject could reach a Pearson score above 0.5.
 
 ## Paper Reference
 
-If you use EEGWaveRegressor in your research or work, please consider citing our paper:
+If you use EEGWaveNet in your research or work, please consider citing our paper:
 
 ```
 @INPROCEEDINGS{a-Wavenet,
@@ -24,7 +24,7 @@ If you use EEGWaveRegressor in your research or work, please consider citing our
 
 ## Acknowledgments
 
-We would like to acknowledge the following papers and implementations, which have significantly influenced our research and contributed to the development of EEGWaveRegressor:
+We would like to acknowledge the following papers and implementations, which have significantly influenced our research and contributed to the development of EEGWaveNet:
 
 - FloWaveNet: https://github.com/ksw0306/FloWaveNet/blob/master/modules.py
 - DiffWave: https://github.com/philsyn/DiffWave-Vocoder
@@ -36,7 +36,7 @@ We are grateful to the authors of these works for their valuable contributions t
 
 ## Getting Started
 
-To get started with EEGWaveRegressor, follow the instructions below:
+To get started with EEGWaveNet, follow the instructions below:
 
 1. Clone this repository to your local machine.
 2. Install the required dependencies (list the dependencies and their versions, if applicable).
@@ -58,7 +58,7 @@ python distributed_train_fine_tune.py
 
 ## Model Interpretability
 
-One of the key strengths of EEGWaveRegressor is its interpretability. We also provide scripts to analyze the model. These scripts are in the analysis folder (will be updated soon) 
+One of the key strengths of EEGWaveNet is its interpretability. We also provide scripts to analyze the model. These scripts are in the analysis folder (will be updated soon) 
 
 ## License
 
