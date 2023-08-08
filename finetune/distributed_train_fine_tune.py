@@ -5,6 +5,7 @@ import subprocess
 import argparse
 import warnings
 warnings.filterwarnings("ignore")
+
 import torch
 
 # change this to your utils directory
@@ -14,15 +15,15 @@ from distributed_util import *
 if __name__ == '__main__':
     # Parameters
     # Length of the decision window
-    window_length = 5
-    hop_length = 0.5
-  
-    args_list = ['train.py']
+    window_length = 8
+    hop_length = 0.117
+
+    args_list = ['fine_tune_subject.py']
     #args_list += args_str.split(' ') if len(args_str) > 0 else []
     #args_list.append('--config={}'.format(config))
     num_gpus = torch.cuda.device_count()
     print("num_gpus: ", num_gpus)
-    args_list.append('--train_config={}'.format("waveNet_best_4_20_32.json"))
+    args_list.append('--train_config={}'.format("wavenet_best_4_20_32_finetune.json"))
     args_list.append('--window_length={}'.format(window_length))
     args_list.append('--hop_length={}'.format(hop_length))
     args_list.append('--num_gpus={}'.format(num_gpus))

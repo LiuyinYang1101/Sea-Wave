@@ -21,9 +21,6 @@ from torch.utils.data.distributed import DistributedSampler
 from cyclic_scheduler import CyclicLRWithRestarts
 
 def train(train_conig_file, window_length, hop_length, num_gpus, rank, group_name):
-    train_from_scratch = True
-    fs = 64
-
     with open(train_conig_file) as fp:
         config = json.load(fp)
         train_config = config["train_config"]  # training parameters
@@ -33,7 +30,7 @@ def train(train_conig_file, window_length, hop_length, num_gpus, rank, group_nam
         wavenet_config = config["wavenet_config"]  # to define wavenet
         global trainset_config
         trainset_config = config["trainset_config"]  # to load trainset
-        global diffusion_hyperparams
+
 
     output_directory = train_config["output_directory"]
     tensorboard_directory = train_config["tensorboard_directory"]
