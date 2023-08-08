@@ -40,20 +40,25 @@ To get started with EEGWaveRegressor, follow the instructions below:
 
 1. Clone this repository to your local machine.
 2. Install the required dependencies (list the dependencies and their versions, if applicable).
-3. Download the EEG data and preprocessed datasets as described in the accompanying documentation.
+3. Download the EEG data and preprocessed datasets as described in the competition documentation: split_data more specifically.
 4. Run the model training script, specifying the desired hyperparameters and dataset paths in the corresponding .json file.
 5. Evaluate the trained model's performance on held-out subjects and held-out stories.
 
 ## Usage
 
+to train (train the subject-independent model): go to the train folder, and execute the following script:
 ```
-to train:
 python distributed_train.py
+```
+
+to finetune (train the subject-dependent model): go to the finetune folder, and execute the following script:
+```
+python distributed_train_fine_tune.py
 ```
 
 ## Model Interpretability
 
-One of the key strengths of EEGWaveRegressor is its interpretability. We also provide scripts to analyze the model. These scripts are in the analysis folder 
+One of the key strengths of EEGWaveRegressor is its interpretability. We also provide scripts to analyze the model. These scripts are in the analysis folder (will be updated soon) 
 
 ## License
 
