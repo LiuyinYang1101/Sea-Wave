@@ -1,14 +1,14 @@
-# EEGWaveNet
+# Sea-Wave
 
-EEGWaveNet is an open-source repository for a novel approach to auditory EEG decoding. This project presents the EEGWaveNet model, a state-of-the-art architecture for auditory EEG data decoding. Check our paper:
+Sea-Wave is an open-source repository for a novel approach to auditory EEG decoding. This project presents the adapted Wavenet model, a state-of-the-art architecture for auditory EEG data decoding. Check our paper:
 
 ## Introduction
 
-This study introduces the EEGWaveNet, a novel model for auditory EEG decoding as an extension of our adapted Wavenet model, the model that ranked second in the Auditory EEG Challenge regression subtask of the ICASSP Signal Processing Grand Challenge 2023. We introduce EEGWaveNet which resulted in superior performance compared to state-of-the-art models as well as good interpretability. The best model achieved a Pearson correlation of 0.2258 on held-out stories and 0.1158 on held-out subjects. After fine-tuning, the best subject could reach a Pearson score above 0.5.
+This study presents Sea-Wave, a WaveNet-based architecture for reconstructing speech envelopes from auditory EEG. The model is an extension of our submission for the Auditory EEG Challenge of the ICASSP Signal Processing Grand Challenge 2023. We improve upon our prior work by evaluating model components and hyperparameters through an ablation study and hyperparameter search, respectively. Our best subject-independent model achieves a Pearson correlation of 22.58% on seen and 11.58% on unseen subjects. After subject-specific finetuning, we find an average relative improvement of 30% for the seen subjects and a Pearson correlation of 56.57% for the best subject. Finally, we explore a number of model visualizations to obtain a better understanding of the model, the differences across subjects and the EEG features that relate to auditory perception.
 
 ## Paper Reference
 
-If you use EEGWaveNet in your research or work, please consider citing our paper:
+If you use Sea-Wave in your research or work, please consider citing our paper:
 
 ```
 @INPROCEEDINGS{a-Wavenet,
@@ -24,7 +24,7 @@ If you use EEGWaveNet in your research or work, please consider citing our paper
 
 ## Acknowledgments
 
-We would like to acknowledge the following papers and implementations, which have significantly influenced our research and contributed to the development of EEGWaveNet:
+We would like to acknowledge the following papers and implementations, which have significantly influenced our research and contributed to the development of Sea-Wave:
 
 - FloWaveNet: https://github.com/ksw0306/FloWaveNet/blob/master/modules.py
 - DiffWave: https://github.com/philsyn/DiffWave-Vocoder
@@ -36,7 +36,7 @@ We are grateful to the authors of these works for their valuable contributions t
 
 ## Getting Started
 
-To get started with EEGWaveNet, follow the instructions below:
+To get started with Sea-Wave, follow the instructions below:
 
 1. Clone this repository to your local machine.
 2. Install the required dependencies (list the dependencies and their versions, if applicable).
@@ -58,7 +58,7 @@ python distributed_train_fine_tune.py
 
 ## Model Interpretability
 
-One of the key strengths of EEGWaveNet is its interpretability. We also provide scripts to analyze the model. These scripts are in the analysis folder (will be updated soon) 
+One of the key strengths of Sea-Wave is its interpretability. We also provide scripts to analyze the model. These scripts are in the analysis folder (which will be updated soon) 
 
 ## License
 
